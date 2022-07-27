@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "nicknamed",
+  "version": "${version}",
+  "name": "Nicknamed",
+  "description": "Allows you to change all visible nameplates to a certain string.",
+  "authors": [
+    "b1n4ry"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.b1n4ry.client.NicknamedClient"
+    ],
+    "main": [
+      "com.b1n4ry.Nicknamed"
+    ]
+  },
+  "mixins": [
+    "nicknamed.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
